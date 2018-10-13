@@ -6,5 +6,5 @@ Operations on a doubly linked list:
 5. 5) [ ] delete at a certain position
 6. 6) [ ] delete from the left
 7. 7) [ ] delete from the right
-8. 8) [ ] iterate from the left
-9. 9) [ ] iterate from the right
+8. 8) [x] iterate from the left
+9. 9) [x] iterate from the right

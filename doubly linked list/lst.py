@@ -51,4 +51,16 @@ class DoublyLinkedList:
             self.tail = new
             self.count += 1
 
+    def iterateFromStart(self):
+        curr = self.head
 
+        while curr != None:
+            print(curr.data)
+            curr = curr.next
+
+    def iteratefromTail(self):
+        curr = self.tail
+
+        while curr != None:
+            print(curr.data)
+            curr = curr.prev
