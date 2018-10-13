@@ -1,6 +1,6 @@
 Operations on a doubly linked list:
 1. 1) [x] create a list
-2. 2) [ ] add items at the beginning of the list
+2. 2) [x] add items at the beginning of the list
 3. 3) [ ] add items at the end of the list
 4. 4) [ ] add an item at a certain position
 5. 5) [ ] delete at a certain position
