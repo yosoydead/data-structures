@@ -31,3 +31,24 @@ class DoublyLinkedList:
             #the prev head needs to point to the new head
             tempHead.prev = self.head
             self.count += 1
+
+    def addToLast(self,data):
+        #create a new node to hold the data to be added
+        new = Node(data)
+
+        #if the list is empty, the head and tail need to point
+        #to the same value
+        if self.count == 0:
+            self.head = new
+            self.tail =self.head
+            self.count += 1
+        else:
+            #need to bind the current tail.next pointer to the new value
+            self.tail.next = new
+            #make the new pointer prev to point to the tail
+            new.prev = self.tail
+            #update the tail to point to the new value
+            self.tail = new
+            self.count += 1
+
+
