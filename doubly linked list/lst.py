@@ -51,6 +51,9 @@ class DoublyLinkedList:
             self.tail = new
             self.count += 1
 
+    def addAtCertainIndex(self, data, index):
+        pass
+    
     def iterateFromStart(self):
         curr = self.head
 
@@ -76,3 +79,14 @@ class DoublyLinkedList:
     
     def lastItem(self):
         return self.tail
+
+    def removeFirstItem(self):
+        pass
+
+    def removeLastItem(self):
+        pass
+
+    def removeAtCertainIndex(self, index):
+        pass
+
+    
