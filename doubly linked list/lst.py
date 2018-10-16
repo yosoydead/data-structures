@@ -81,6 +81,7 @@ class DoublyLinkedList:
         return self.tail
 
     def removeFirstItem(self):
+        #cant remove an item if the list is empty 
         if self.count != 0:
             if self.count == 1:
                 backup = self.head
@@ -98,15 +99,20 @@ class DoublyLinkedList:
             return "Can't remove an item if the list is empty."
 
     def removeLastItem(self):
+        #cant remove an element is the list is empty
         if self.count != 0:
             if self.count == 1:
                 backup = self.head
                 self.head = None
                 self.tail = None
                 self.count -= 1
-                return backup
+                return backup.data
             else:
-                pass
+                backup = self.tail
+                self.tail = self.tail.prev
+                self.tail.next = None
+                self.count -= 1
+                return backup.data
         else:
             return "Can't remove an item if the list is empty."
 

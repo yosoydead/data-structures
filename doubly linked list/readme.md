@@ -4,8 +4,8 @@ Operations on a doubly linked list:
 3. 3) [x] add items at the end of the list
 4. 4) [ ] add an item at a certain position
 5. 5) [ ] delete at a certain position
-6. 6) [x] delete from the left (i undestand that it is the first element that i want to delete)
-7. 7) [ ] delete from the right
+6. 6) [x] delete from the left (i undestand that it is the first element that i need to delete)
+7. 7) [x] delete from the right (i understand that it is the last element that i need to delete)
 8. 8) [x] iterate from the left
 9. 9) [x] iterate from the right
 10. 10) [x] size function (i added it)
