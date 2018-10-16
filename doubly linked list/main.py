@@ -13,7 +13,10 @@ def main():
     print("head", x.head.data, "tail", x.tail.data)
     x.addToStart("Bogdan")
     print("head", x.head.data, "tail", x.tail.data)
-
+    x.iterateFromStart()
+    print("removed", x.removeFirstItem())
+    print("head", x.head.data, "tail", x.tail.data)
+    x.iterateFromStart()
     # x.addToStart("Radu")
     # print("head", x.head.data, "tail", x.tail.data)
     # x.addToStart("Bogdan")
@@ -21,7 +24,7 @@ def main():
     # x.addToStart("Mircea")
     # print("head", x.head.data, "tail", x.tail.data)
 
-    x.iteratefromTail()
+    #x.iteratefromTail()
 
 
 if __name__ == '__main__':
