@@ -21,7 +21,7 @@ class CLL:
 
         #update the null pointer with the value of the previous head that is stored
         #in the temp variable
-        self.head.nextNode = temp
+        self.head.next = temp
 
         #increment the count element
         self.count += 1
@@ -36,7 +36,7 @@ class CLL:
         if self.count != 0:
 
             #just set the value of the head node to be equal to the value of its nextNode
-            self.head = self.head.nextNode
+            self.head = self.head.next
             self.count -= 1
 
             if self.count == 0:
@@ -58,10 +58,10 @@ class CLL:
                 #while the value of the current node seen is not = to tail, move through the list
                 #it stops as the second to last item because the nextNode value would be the value of the tail node
                 while current.nextNode != self.tail:
-                    current = current.nextNode
+                    current = current.next
                 
                 #update the nextNode pointer of the second to last element to be null
-                current.nextNode = None
+                current.next = None
 
                 #update the value of the tail pointer
                 self.tail = current
