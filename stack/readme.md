@@ -13,9 +13,9 @@ Implementations:
     3. [x] peek  
     4. [x] size  
     5. [x] isEmpty  
-2. [ ] using the node/linked list
-    1. [ ] push  
-    2. [ ] pop  
-    3. [ ] peek  
-    4. [ ] size  
-    5. [ ] isEmpty  
+2. [x] using the node/linked list
+    1. [x] push  
+    2. [x] pop  
+    3. [x] peek  
+    4. [x] size  
+    5. [x] isEmpty  
