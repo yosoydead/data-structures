@@ -64,3 +64,15 @@ class DoublyLinkedList:
         while curr != None:
             print(curr.data)
             curr = curr.prev
+
+    def isEmpty(self):
+        return self.count == 0
+
+    def size(self):
+        return self.count
+
+    def firstItem(self):
+        return self.head
+    
+    def lastItem(self):
+        return self.tail
