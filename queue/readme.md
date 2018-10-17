@@ -17,5 +17,5 @@ Implementations:
     1. [x] queue()  
     2. [ ] enqueue()  
     3. [ ] dequeue()  
-    4. [ ] isEmpty()  
-    5. [ ] size()  
+    4. [x] isEmpty()  
+    5. [x] size()  
