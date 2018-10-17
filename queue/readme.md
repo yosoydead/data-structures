@@ -19,4 +19,4 @@ Implementations:
     3. [ ] dequeue()  
     4. [x] isEmpty()  
     5. [x] size()  
-    6. [ ] iter()
+    6. [x] iter()

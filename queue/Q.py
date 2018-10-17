@@ -25,3 +25,9 @@ class myQueue:
 
     def isEmpty(self):
         return self.count == 0
+
+    def iter(self):
+        curr = self.first
+        while curr != None:
+            print(curr.data)
+            curr = curr.next
