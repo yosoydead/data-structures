@@ -15,7 +15,8 @@ Implementations:
 1. [x] with the predefined list in python.  
 2. [ ] using a singly linked list. Methods:
     1. [x] queue()  
-    2. [ ] enqueue()  
+    2. [x] enqueue()  
     3. [ ] dequeue()  
     4. [x] isEmpty()  
     5. [x] size()  
+    6. [ ] iter()
