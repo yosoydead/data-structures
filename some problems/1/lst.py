@@ -27,4 +27,32 @@ class Lst():
     
     def returnAddressOfHead(self):
         return self.head
+
+    def displayAllStudentsData(self):
+        current = self.head
+
+        while current != None:
+            average = 0
+            for i in range(0,3):
+                bla = current.elev.grades[i]
+                average += bla
+            print("First name: ", current.elev.returnName())
+            print("Last name: ", current.elev.returnSurname())
+            print("Grades: ", current.elev.grades)
+            print("Average of: ", average/3)
+            print("-----------------------------------------------")
+            current = current.next
+
+    def displayAverage(self):
+        current = self.head
+        grades = 0
+        while current != None:
+            bla = 0
+            for i in range(0, 3):
+                nota = current.elev.grades[i]
+                bla += nota
+            grades += bla
+            current = current.next
+        
+        return grades / self.count
     

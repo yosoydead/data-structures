@@ -5,4 +5,5 @@ x = Lst()
 x.addStudent()
 x.addStudent()
 x.addStudent()
-print("head address", x.returnAddressOfHead())
+
+print("all students average",x.displayAverage())
