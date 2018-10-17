@@ -21,3 +21,4 @@ Implementations:
     5. [x] size()  
     6. [x] iter()
     7. [x] check the first item
+    8. [x] check the last item

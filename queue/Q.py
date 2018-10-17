@@ -8,7 +8,7 @@ class myQueue:
 
     def enqueue(self, data):
         new = Node(data)
-        if count == 0:
+        if self.count == 0:
             self.first = new
             self.last = self.first
             self.count += 1
@@ -25,12 +25,12 @@ class myQueue:
                 self.first = None
                 self.last = None
                 self.count -= 1
-                return backup
+                return backup.data
             else:
                 backup = self.first
                 self.first = self.first.next
                 self.count -= 1
-                return backup
+                return backup.data
         else:
             return "Queue is empty. Can't remove any items."
     
@@ -47,4 +47,7 @@ class myQueue:
             curr = curr.next
     
     def checkFirstItem(self):
-        return self.first
+        return self.first.data
+
+    def checkLastItem(self):
+        return self.last.data
