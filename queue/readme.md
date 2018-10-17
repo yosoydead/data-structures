@@ -13,7 +13,7 @@ I will use the internal list in python first. I'll implement the linked list ver
 
 Implementations:
 1. [x] with the predefined list in python.  
-2. [ ] using a singly linked list. Methods:
+2. [x] using a singly linked list. Methods:
     1. [x] queue()  
     2. [x] enqueue()  
     3. [x] dequeue()  
