@@ -14,7 +14,7 @@ I will use the internal list in python first. I'll implement the linked list ver
 Implementations:
 1. [x] with the predefined list in python.  
 2. [ ] using a singly linked list. Methods:
-    1. [ ] queue()  
+    1. [x] queue()  
     2. [ ] enqueue()  
     3. [ ] dequeue()  
     4. [ ] isEmpty()  
