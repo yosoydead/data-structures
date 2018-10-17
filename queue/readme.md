@@ -16,7 +16,8 @@ Implementations:
 2. [ ] using a singly linked list. Methods:
     1. [x] queue()  
     2. [x] enqueue()  
-    3. [ ] dequeue()  
+    3. [x] dequeue()  
     4. [x] isEmpty()  
     5. [x] size()  
     6. [x] iter()
+    7. [x] check the first item
