@@ -23,3 +23,12 @@ class Lst:
         while curr != None:
             print(curr.data)
             curr = curr.next
+
+    def listToString(self):
+        cur = self.head
+        string = ""
+
+        while cur != None:
+            string += (str(cur.data) + " ")
+            cur = cur.next
+        return string
