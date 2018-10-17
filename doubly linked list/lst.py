@@ -52,7 +52,20 @@ class DoublyLinkedList:
             self.count += 1
 
     def addAtCertainIndex(self, data, index):
-        pass
+        new = Node(data)
+        if self.count == 0:
+            self.addToStart(self,data)
+        elif self.count == 1 or index > self.count:
+            self.addToLast(self,data)
+        else:
+            current = self.head
+            for i in range(0, index):
+                current = current.next
+            new.next = current.next
+            current.next = new
+            new.prev = current
+            self.count += 1
+        
     
     def iterateFromStart(self):
         curr = self.head
