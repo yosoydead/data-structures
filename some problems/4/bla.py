@@ -1,0 +1,16 @@
+from lst import SLL
+
+x = SLL()
+x.addToBeginning(4)
+print("head", x.head.data, "tail", x.tail.data)
+x.addToBeginning(5)
+print("head", x.head.data, "tail", x.tail.data)
+x.addToBeginning(6)
+print("head", x.head.data, "tail", x.tail.data)
+x.addToEnd(7)
+print("head", x.head.data, "tail", x.tail.data)
+x.addToEnd("bogdan")
+print("head", x.head.data, "tail", x.tail.data)
+x.addToBeginning("radu")
+print("head", x.head.data, "tail", x.tail.data)
+x.iter()
