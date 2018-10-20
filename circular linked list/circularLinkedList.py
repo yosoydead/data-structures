@@ -37,6 +37,7 @@ class CLL:
 
             #just set the value of the head node to be equal to the value of its nextNode
             self.head = self.head.next
+            self.tail.next = self.head
             self.count -= 1
 
             if self.count == 0:
