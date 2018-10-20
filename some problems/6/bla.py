@@ -19,8 +19,8 @@ def concat(lst1, lst2):
     
     return new
     
-x.populate(15)
-y.populate(20)
+x.populate(5)
+y.populate(5)
 
 z = concat(x,y)
 z.iter()

@@ -12,5 +12,6 @@
 8. [x] 4.1) Write a subprogram that adds a new node AT THE BEGINNING of a singly linked list.Each node contains a pointer to the next node and a real number in it.
 9. [x] 5) The nodes of a singly linked list contain, besides the pointer to the next node, a number of 1 digit. The list has at least 1 node and a maximum of 6 nodes. Write a function calculate and show to compute the value by concatinating the value of each node in the reading order. Ex: the function returns **956** and the list is ```0 -> 9 -> 5 -> 6```
 10. [x] 6) By concatinating two singly linked list, a third singly linked list is greated containing, in order, the nodes of the first list, followed by the nodes of the second list. Write a function that concatinates two singly linked lists.
-11. [ ] 7) Write a function that swaps the first and last element in a singly linked list.
-12. [ ] 8) Write a program that stores a matrix with **m** rows and **n** columns and creates **m** singly linked lists where each list stores the elements of each row.
+11. [x] 7) Write a program that stores a matrix with **m** rows and **n** columns and creates **m** singly linked lists where each list stores the elements of each row. **my solution may not be the best in terms of optimization**
+12. [ ] 8) A singly linked list stores a single character in each node. Write a function that tests if the result from concatinating the lists items is a palindrom or not.
+13. [ ] 9) Read a permutation of numbers from 1,2,....,n. Use a circular linked list, print all its circular permutations. Ex: read 1 2 3 => print 1 2 3, 2 3 1, 3 1 2
