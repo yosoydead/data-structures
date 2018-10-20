@@ -14,4 +14,4 @@
 10. [x] 6) By concatinating two singly linked list, a third singly linked list is greated containing, in order, the nodes of the first list, followed by the nodes of the second list. Write a function that concatinates two singly linked lists.
 11. [x] 7) Write a program that stores a matrix with **m** rows and **n** columns and creates **m** singly linked lists where each list stores the elements of each row. **my solution may not be the best in terms of optimization**
 12. [x] 8) A singly linked list stores a single character in each node. Write a function that tests if the result from concatinating the lists items is a palindrom or not.
-13. [ ] 9) Read a permutation of numbers from 1,2,....,n. Use a circular linked list, print all its circular permutations. Ex: read 1 2 3 => print 1 2 3, 2 3 1, 3 1 2
+13. [x] 9) Read a permutation of numbers from 1,2,....,n. Using a circular linked list, print all its circular permutations. Ex: read 1 2 3 => print 1 2 3, 2 3 1, 3 1 2
