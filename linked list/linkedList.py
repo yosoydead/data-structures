@@ -177,6 +177,29 @@ class MyLinkedList:
                 self.tail = current
             self.count -= 1
 
+    #method that reverses the list in place
+    def reverse(self):
+        #swap the head with tail
+        node = self.head
+        self.head = self.tail
+        self.tail = node
+
+        #create a variable that helps store the previous node passed
+        previous = None
+
+        #create a variable to store next nodes
+        nxt = None
+
+        for i in range(0, self.count-1):
+            nxt = node.nextNode
+
+            node.nextNode = previous
+
+            previous = node
+
+            node = nxt
+
+
     def seeHeadItem(self):
         return self.head.data
     

@@ -36,6 +36,9 @@ def main():
     ll.iterateThroughTheList()
     print("removed index at 3 with function", ll.removeAtIndex(3).data)
     ll.iterateThroughTheList()
+    print("============================")
+    ll.reverse()
+    ll.iterateThroughTheList()
     #ll.iter()
     #print("new tail", ll.seeTailItem())
 
