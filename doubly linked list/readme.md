@@ -12,3 +12,4 @@ Operations on a doubly linked list:
 11. 11) [x] is empty function (i added it)
 12. 12) [x] see the first item in the list (i added it)
 13. 13) [x] see the last item in the list (i added it)
+14. 14) [x] get method that returns the node from a given index

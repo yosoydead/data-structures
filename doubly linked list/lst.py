@@ -65,7 +65,34 @@ class DoublyLinkedList:
             current.next = new
             new.prev = current
             self.count += 1
-        
+    
+    #method that gets a certain node at an index
+    def get(self, index):
+        #check if index in valid
+        if index < 0 or index >= self.count:
+            return None
+
+        #check if index is <= to lists length
+        #there is no point in iterating through the entire list if the item
+        #is at the end of it
+
+        #if it is, start iterating from the beginning
+        if index <= self.count//2:
+            counter = 0
+            currentNode = self.head
+            while counter != index:
+                currentNode = currentNode.next
+                counter+=1
+            return currentNode
+        #if not, iterate from the end of the list
+        else:
+            counter = self.count-1
+            currentNode = self.tail
+            while index != counter:
+                currentNode = currentNode.prev
+                counter-=1
+            return currentNode
+
     
     def iterateFromStart(self):
         curr = self.head
