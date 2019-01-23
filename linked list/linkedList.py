@@ -47,12 +47,6 @@ class MyLinkedList:
         self.tail = newNode
         self.count += 1
         
-    def iterateThroughTheList(self):
-        currentNode = self.head
-        while currentNode != None:
-            print(currentNode.data)
-            currentNode = currentNode.nextNode
-
     #this method gets the value at the specified index
     def get(self, index):
         if index < 0 or index >= self.count:
@@ -66,6 +60,54 @@ class MyLinkedList:
             currentNode = currentNode.nextNode
         
         return currentNode
+
+    #this method will insert a new node at the specified index
+    def insert(self, index, data):
+        #if the index is less than 0 or > to the length of the list
+        #return false because you can't add a node at an invalid index
+        if index < 0 or index > self.count:
+            return False
+
+        #if the index is == to the length of the list, use the defined
+        #insert at the end method
+        if index == self.count:
+            self.addAtTheEndOfTheList(data)
+            return True
+        
+        #if index is 0, use the add to beginning method
+        if index == 0:
+            self.addAtTheStartOfTheList(data)
+            return True
+        
+        #if anything above is true, use the get method to get the node
+        #BEFORE the specified index because you want to add a new node
+        #at the specified index in the params
+        previousNode = self.get(index-1)
+
+        #store the next node of the previousNode so you don't lose the chain
+        #when updating previousNode.next = newNode
+        temp = previousNode.nextNode
+
+        #create the new node
+        newNode = Node(data)
+
+        #link the newNode with the previousNode
+        previousNode.nextNode = newNode
+
+        #link the rest of the list to the newNode
+        newNode.nextNode = temp
+
+        #update the length of the list
+        self.count += 1
+
+        #return true so you know something happened
+        return True
+
+    def iterateThroughTheList(self):
+        currentNode = self.head
+        while currentNode != None:
+            print(currentNode.data)
+            currentNode = currentNode.nextNode
 
     def removeTheHeadItem(self):
 
@@ -126,7 +168,7 @@ class MyLinkedList:
 
         #if the node is not found, return false
         return False
-        
+
     def size(self):
         return self.count
     
