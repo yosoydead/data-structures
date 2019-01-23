@@ -8,17 +8,17 @@
 
 * Implementations:
     - 1. [x] using the predefined list of python  
-        1. [x] push  
-        2. [x] pop  
-        3. [x] peek  
-        4. [x] size  
-        5. [x] isEmpty  
+        - 1. [x] push  
+        - 2. [x] pop  
+        - 3. [x] peek  
+        - 4. [x] size  
+        - 5. [x] isEmpty  
     - 2. [x] using the node/singly linked list
-        1. [x] push  
-        2. [x] pop  
-        3. [x] peek  
-        4. [x] size  
-        5. [x] isEmpty  
+        - 1. [x] push  
+        - 2. [x] pop  
+        - 3. [x] peek  
+        - 4. [x] size  
+        - 5. [x] isEmpty  
 * **Big O** of the stack:
     - Insertion -> **O(1)**
     - Removal -> **O(1)**
