@@ -34,6 +34,8 @@ def main():
     ll.iterateThroughTheList()
     print("add inserted with insert(4)", ll.insert(4,"new node inserted at index 4"))
     ll.iterateThroughTheList()
+    print("removed index at 3 with function", ll.removeAtIndex(3).data)
+    ll.iterateThroughTheList()
     #ll.iter()
     #print("new tail", ll.seeTailItem())
 

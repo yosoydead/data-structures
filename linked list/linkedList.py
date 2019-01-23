@@ -109,6 +109,37 @@ class MyLinkedList:
             print(currentNode.data)
             currentNode = currentNode.nextNode
 
+    #this method removes a node at a specified index
+    def removeAtIndex(self, index):
+        #if the index is < or > the lists length, return false
+        if index < 0 or index >= self.count:
+            return False
+
+        #if index is == to the list length -1, use the removeTail function
+        if index == self.count-1:
+            self.removeTheTailItem()
+            return True
+        
+        #if index is == 0, use the removeHead function
+        if index == 0:
+            self.removeTheHeadItem()
+            return True
+
+        #if nothing from above is true
+
+        #get the node at index-1
+        prevNode = self.get(index-1)
+
+        #store the removed node which should be the next node
+        #of the stored prevNode
+        removedNode = prevNode.nextNode
+
+        #the next node of prevNode should be the next node of removedNode
+        prevNode.nextNode = removedNode.nextNode
+
+        #return that removed node
+        return removedNode
+
     def removeTheHeadItem(self):
 
         #you cant remove an item if the list is empty
