@@ -7,6 +7,39 @@ class BST:
     def __init__(self):
         self.root = None
 
+    #method that searches the tree to see if a specific value is in the tree
+    def contains(self, value):
+        #start at the root
+        #if there is no root, return null
+        if self.root == None:
+            return False
+
+        #if there is a root, check if the value of the node is the one we are looking for
+            #if it is, stop
+        current = self.root
+        found = False
+
+        while current and (not found):
+            #if not, check if the value is < or > than the value of the root
+                #if >
+                    #check to see if there is something to the right
+                        #if it is, move to that node and repeat steps
+                        #if not, stop
+            if value < current.data:
+                current = current.left
+                #if <
+                    #check to see if there is something to the left
+                        #if it is, move to that node and repeat steps
+                        #if not, stop
+            elif value > current.data:
+                current = current.right
+            #if we found, return
+            else:
+                return True
+
+        return False
+
+
     #method to insert into the tree
     def insert(self, data):
         #create a new node

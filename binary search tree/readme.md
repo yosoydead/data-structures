@@ -10,3 +10,7 @@
     - descendant -> **a node reachable by repeated proceeding from parent to child**
     - leaf -> **a node with no children**
     - branch node -> **a node with at least one child**
+
+* **Big O** of bst:
+    - Insertion -> **O(log n)**
+    - Searching -> **O(log n)**
