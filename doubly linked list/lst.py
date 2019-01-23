@@ -184,7 +184,32 @@ class DoublyLinkedList:
             return "Can't remove an item if the list is empty."
 
     def removeAtCertainIndex(self, index):
-        pass
+        if index < 0 or index >= self.count:
+            return False
+        
+        if index == 0:
+            self.removeFirstItem()
+            return True
+        
+        if index == self.count-1:
+            self.removeLastItem()
+            return True
+
+
+        #use the get method to get the node from the specified index
+        removedNode = self.get(index)
+
+        removedNode.prev.next = removedNode.next
+        removedNode.next.prev = removedNode.prev
+
+        #clean up the removed node
+        removedNode.prev = None
+        removedNode.next = None
+
+        self.count -= 1
+         
+        return removedNode
+        
 
     #method that gets a certain node and updates its value
     def set(self, index, value):
