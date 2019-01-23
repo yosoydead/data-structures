@@ -24,8 +24,11 @@ def main():
     ll.removeTheTailItem()
     print("head:",ll.seeHeadItem())
     print("tail:",ll.seeTailItem())
+    ll.addAtTheEndOfTheList("test")
     ll.iterateThroughTheList()
-    print("get function at index 2", ll.get(2))
+    print("get function at index 4", ll.get(4).data)
+    print("set function at index 3", ll.set(3, "new value added"))
+    ll.iterateThroughTheList()
     #ll.iter()
     #print("new tail", ll.seeTailItem())
 

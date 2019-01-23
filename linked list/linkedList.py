@@ -65,7 +65,7 @@ class MyLinkedList:
             count+=1
             currentNode = currentNode.nextNode
         
-        return currentNode.data
+        return currentNode
 
     def removeTheHeadItem(self):
 
@@ -111,6 +111,22 @@ class MyLinkedList:
         return self.tail.data
         #print(self.tail.data)
     
+    #this method will accept an index and a value as arguments
+    #it will update the value of the item at a certain index to the value passed
+    def set(self, index, value):
+        #first, get the value at the specified index
+        #use the already defined get method
+        foundNode = self.get(index)
+
+        #if the node is found, update its value
+        #return true so you know something updated
+        if foundNode:
+            foundNode.data = value
+            return True
+
+        #if the node is not found, return false
+        return False
+        
     def size(self):
         return self.count
     
