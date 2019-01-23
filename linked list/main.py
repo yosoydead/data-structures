@@ -25,6 +25,7 @@ def main():
     print("head:",ll.seeHeadItem())
     print("tail:",ll.seeTailItem())
     ll.iterateThroughTheList()
+    print("get function at index 2", ll.get(2))
     #ll.iter()
     #print("new tail", ll.seeTailItem())
 

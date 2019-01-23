@@ -53,6 +53,20 @@ class MyLinkedList:
             print(currentNode.data)
             currentNode = currentNode.nextNode
 
+    #this method gets the value at the specified index
+    def get(self, index):
+        if index < 0 or index >= self.count:
+            return None
+        
+        count = 0
+        currentNode = self.head
+
+        while count != index:
+            count+=1
+            currentNode = currentNode.nextNode
+        
+        return currentNode.data
+
     def removeTheHeadItem(self):
 
         #you cant remove an item if the list is empty
