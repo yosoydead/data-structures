@@ -93,7 +93,6 @@ class DoublyLinkedList:
                 counter-=1
             return currentNode
 
-    
     def iterateFromStart(self):
         curr = self.head
 
@@ -158,5 +157,18 @@ class DoublyLinkedList:
 
     def removeAtCertainIndex(self, index):
         pass
+
+    #method that gets a certain node and updates its value
+    def set(self, index, value):
+        foundNode = self.get(index)
+
+        #if the result is not null, update its value
+        if foundNode != None:
+            foundNode.data = value
+            return True
+        
+        return False
+    
+
 
     
