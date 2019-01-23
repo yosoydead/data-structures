@@ -52,19 +52,47 @@ class DoublyLinkedList:
             self.count += 1
 
     def addAtCertainIndex(self, data, index):
-        new = Node(data)
+        if index < 0 or index > self.count:
+            return False
+
         if self.count == 0:
             self.addToStart(self,data)
-        elif self.count == 1 or index > self.count:
+            return True
+        if self.count == 1 or index == self.count:
             self.addToLast(self,data)
-        else:
-            current = self.head
-            for i in range(0, index):
-                current = current.next
-            new.next = current.next
-            current.next = new
-            new.prev = current
-            self.count += 1
+            return True
+        
+        #i use the get method because it already checks if the index is valid
+        #or if it is less than or bigger than the half of the list
+
+        #get node at index-1
+        beforeNode = self.get(index-1)
+        new = Node(data)
+        afterNode = beforeNode.next
+
+        #the next pointer of beforeNode needs to point to the new node
+        beforeNode.next = new
+
+        #the new node needs to point back to the beforeNode
+        new.prev = beforeNode
+
+        #the afterNode and new node have to point at each other
+        new.next = afterNode
+        afterNode.prev = new
+        
+        self.count += 1
+
+        return True
+
+
+
+            # current = self.head
+            # for i in range(0, index):
+            #     current = current.next
+            # new.next = current.next
+            # current.next = new
+            # new.prev = current
+            # self.count += 1
     
     #method that gets a certain node at an index
     def get(self, index):
