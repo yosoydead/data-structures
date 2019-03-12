@@ -4,6 +4,7 @@
     3. [x] Circular Linked List
     4. [x] Stack
     5. [x] Queue
-    6. [ ] Binary Search Tree
+    6. [x] Binary Search Tree -> [traversal](https://github.com/yosoydead/Tree-Traversal)
+    7. [ ] Binary Heaps
 
 * Each one of these structures was implemented using Python
