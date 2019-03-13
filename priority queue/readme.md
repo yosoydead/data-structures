@@ -24,4 +24,3 @@
     - each Node has a val and priority. Use the priority to build the heap
     - **enqueue** method that accepts a value and a priority, makes a new node and puts it in the right spot based off of its priority
     - **dequeue** method removes root element, returns it and rearranges heap using priority
-    
