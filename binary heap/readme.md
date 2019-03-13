@@ -33,3 +33,9 @@
                 * the child index you swapped to now becomes the new parent index
                 * keep looping and swapping until neither child is larger than the element
                 * **return the old root !**
+* **Big O**:
+    - Insertion -> **O(log N) time** 
+        - if there is a heap with 4 levels and an item is added that belongs at the top of the heap, we have to compare it only **1** time per row. For 16 elements there would be only 4 comparisons.
+    - Removal -> **O(log N) time**
+    - Search -> **O(N) time**
+
