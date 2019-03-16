@@ -19,3 +19,10 @@
     - if we need a certain color, we can't access it directly without looping over the entire array
     - it would be nice if instead of using indices to access the color, we could use more human-readable keys
         - colors["cyan"]
+* To implement a hash table, I'll be using an array.
+* In order to loop up values by key, we need a way to **convert keys into valid array indices**.
+    - a function that performs this task is called a **hash function**
+    - what makes a good hash function:
+        - needs to be fast(i.e. constant time)
+        - doesn't cluster outputs at specific indices, but distributes uniformly
+        - deterministic (same input yields same output)
