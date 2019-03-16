@@ -26,3 +26,4 @@
         - needs to be fast(i.e. constant time)
         - doesn't cluster outputs at specific indices, but distributes uniformly
         - deterministic (same input yields same output)
+* This is a very basic implementation. It doesn't know what to do if you add an item which has duplicate key and many more.

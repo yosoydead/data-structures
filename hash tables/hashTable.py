@@ -61,3 +61,35 @@ class MyHashTable:
                     #return its value
                     return self.keyMap[index][i][1]
 
+    #loop through the hash table array ad return an array of keys in the table
+    def keys(self):
+        keys = []
+
+        for i in range(0, len(self.keyMap)):
+            #if there is something at that index
+            if self.keyMap[i]:
+                for j in range(0, len(self.keyMap[i])):
+                    #dont add duplicate keys
+                    if not keys.__contains__(self.keyMap[i][j][0]):
+                        #append the key of every key-value pairs
+                        keys.append(self.keyMap[i][j][0])
+
+        return keys
+
+    #loop through the hash table array ad return an array of values in the table
+    def values(self):
+        values = []
+
+        for i in range(0, len(self.keyMap)):
+            #if there is something at that index
+            if self.keyMap[i]:
+                for j in range(0, len(self.keyMap[i])):
+                    #dont add duplicate values
+                    if not values.__contains__(self.keyMap[i][j][1]):
+                        #append the value of every key-value pairs
+                        values.append(self.keyMap[i][j][1])
+
+        return values
+
+
+
