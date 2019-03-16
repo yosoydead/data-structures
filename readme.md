@@ -7,5 +7,6 @@
     6. [x] Binary Search Tree -> [traversal](https://github.com/yosoydead/Tree-Traversal)
     7. [x] Binary Heaps
     8. [x] Priority Queue -> *using a MinBinaryHeap*
+    9. [ ] Hash Tables
 
 * Each one of these structures was implemented using Python
