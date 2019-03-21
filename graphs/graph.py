@@ -25,3 +25,14 @@ class MyGraph:
 
         #should reassign the key of vertex2 to be an array that does not contain vertex1
         self.adjacencyList[vertex2] = list(filter(lambda v: v != vertex1, self.adjacencyList[vertex2]))
+
+    #remove vertex function
+    def removeVertex(self, vertex):
+        #loop as long as there are any other vertices in the adjacency list for that vertex
+        while len(self.adjacencyList[vertex]):
+            #call the **removeEdge** function with the vertex we are removing and any values in the adjacency list for that vertex
+            currVertex = self.adjacencyList[vertex].pop()
+            self.removeEdge(vertex, currVertex)
+
+        #delete the key in the adjacency list
+        self.adjacencyList.pop(vertex, None)
