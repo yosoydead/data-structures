@@ -8,5 +8,6 @@
     7. [x] Binary Heaps
     8. [x] Priority Queue -> *using a MinBinaryHeap*
     9. [x] Hash Tables
+    10. [ ] Graphs
 
 * Each one of these structures was implemented using Python
