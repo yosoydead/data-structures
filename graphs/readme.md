@@ -33,4 +33,9 @@
         * should accept two vertices, we can call them vertex1 and vertex2
         * the function should find in the adjacency list the **key** of **vertex1** and **push** **vertex2** to the **array**
         - the function should find in the adjacency list the **key** of **vertex2** and **push** **vertex1** to the array
-        - *don't worry about handling errors/invalid vertices*
+        - *don't worry about handling errors/invalid vertices at the moment*
+    - **remove an edge**:
+        * accepts two vertices, vertex1 and vertex2
+        * should reassign the key of **vertex1** to be an array that **does not** contain **vertex2**
+        * should reassign the key of **vertex2** to be an array that **does not** contain **vertex1**
+        - *don't worry about handling errors/invalid vertices at the moment*

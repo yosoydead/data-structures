@@ -17,3 +17,11 @@ class MyGraph:
 
         #find in the adjacency list the key of vertex2 and push vertex1 to the array
         self.adjacencyList[vertex2].append(vertex1)
+
+    #remove edge
+    def removeEdge(self, vertex1, vertex2):
+        #should reassign the key of vertex1 to be an array that does not contain vertex2
+        self.adjacencyList[vertex1] = list(filter(lambda v: v != vertex2, self.adjacencyList[vertex1]))
+
+        #should reassign the key of vertex2 to be an array that does not contain vertex1
+        self.adjacencyList[vertex2] = list(filter(lambda v: v != vertex1, self.adjacencyList[vertex2]))
